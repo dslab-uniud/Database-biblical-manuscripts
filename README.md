@@ -19,7 +19,7 @@ The following picture reports the overall relational schema of the database:
 
 **Repository** is the entity that represents the current physical location of the manuscript, typically a library or a conservation institution. Its key is the *wd_code*, which consists of a unique alphanumeric code extracted from the [Wikidata portal](https://www.wikidata.org/wiki/Wikidata:Main_Page). The other attributes are _name_, _city_, and _country_, which respectively represent the name of the institution, the city, and the country where it is located.
 
-**Manuscript** represents the physical manuscript, identified by the _siglum_, a unique identifier within this database (not universally unique). A manuscript is described by the following attributes:
+**Manuscript** represents the physical manuscript, identified by the _siglum_, a unique identifier within this database. A manuscript is described by the following attributes:
 * _City of origin_: The city where the manuscript is believed to have been written, which may differ from its current location. Optional.
 * _Initial year_ and _final year_: The time range during which the manuscript was produced. Optional.
 * _Date attribution notes_: Text notes providing details on the manuscript’s date attribution. Optional.
