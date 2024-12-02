@@ -9,7 +9,7 @@ The database aims to pose itself as an integrated and generalizable framework to
 The following picture reports the relational schema of the database
 
 <p align="center">
-<img src="[https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/relational.pdf](https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/relational.png)" alt="Overall Relational diagram" />
+<img src="https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/relational.png" alt="Overall Relational diagram" />
 </p>
 
 
