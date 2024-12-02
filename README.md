@@ -6,7 +6,7 @@ This is the home page of the relational biblical manuscripts database project, d
 
 The database aims to pose itself as an integrated and generalizable framework to store, manage and leverage information about biblical manuscripts.
 
-The following picture reports the relational schema of the database
+The following picture reports the overall relational schema of the database:
 
 <p align="center">
 <img src="https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/relational.png" alt="Overall Relational diagram" />
