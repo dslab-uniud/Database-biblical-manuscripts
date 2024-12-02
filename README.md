@@ -31,6 +31,14 @@ The following picture reports the overall relational schema of the database:
 * _Digital edition_: A hyperlink to a digital reproduction of the manuscript, if available. Optional.
 * _MS identifier_: A unique identifier derived by combining repository WD code, collection, and number. The siglum is used as the key for brevity.
 
+**Book** represents a specific biblical book within a manuscript (e.g., Genesis or Exodus, tracked by the attribute _book_type_). It has the attribute _sequence number_, which indicates the book’s order within the manuscript. Since the sequence order depends on the manuscript, this entity is subordinate to Manuscript. Note that the relationship between Book and Manuscript is many-to-one: a specific book, as transcribed (including its unique errors and variations), belongs to one manuscript only, while a manuscript can contain multiple books.
+
+**Book Element** represents a generic component of a book, which can be one of three types (attribute _element_type_): prologue, summary, and text. The structure is as follows:
+* A book can contain up to five prologues, at most one summary, and exactly one text
+* Books can exist without prologues and/or summaries
+Each Book Element has a unique _ID_, which serves as the primary key within the database. The idea is that the ID ties the book element to a particular text (e.g., a specific prologue known in the domain). Thus, for example, two distinct prologues for the book of Genesis will have different _IDs_ to distinguish them from each othe. Conversely, a prologue with a given _ID_ can appear in more than one book, represents the same shared textual content.
+
+
 ## Usage of the online implementation of the system
 
 TODO
