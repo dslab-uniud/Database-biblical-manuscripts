@@ -54,5 +54,10 @@ Each Book Element has a unique _ID_, which serves as the primary key within the 
 
 ## Usage of the online implementation of the system
 
-TODO
+The system can be accessed at the address [http://158.110.146.222:8080/](http://158.110.146.222:8080/). Upon connection, users will find a _pgAdmin_ web server interface, asking for the login data. 
+A read-only user, that has the privileges to perform `SELECT` operations over the _public_ schema of the database _biblocal_ has been provided, with the following credentials: 
+```
+username = tester_biblical@ai4ch.uniud.it
+password = UXftJGM5eNMdPGZ
+```
 
