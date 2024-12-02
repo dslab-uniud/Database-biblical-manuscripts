@@ -1,9 +1,9 @@
-# A Relational Database for Biblical Manuscripts
+# A Relational Database for Latin Biblical Manuscripts
 
 ## Description
 
-This is the home page of the relational biblical manuscripts database project, developed within the Artificial Intelligence for Cultural Heritage (AI4CH) center and the Data Science and Automatic Verification Laboratory at the University of Udine, Italy.
-The database aims to pose itself as an integrated and generalizable framework to store, manage and leverage information about biblical manuscripts.
+This is the home page of the latin biblical manuscripts relational database project, developed within the Artificial Intelligence for Cultural Heritage (AI4CH) center and the Data Science and Automatic Verification Laboratory at the University of Udine, Italy.
+The database aims to pose itself as an integrated and generalizable framework to store, manage and leverage information about the text and paratext latin biblical manuscripts.
 
 The current repository includes:
 * an Excel file with the raw data about the biblical manuscripts: **TO-DO**
