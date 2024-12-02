@@ -33,11 +33,24 @@ The following picture reports the overall relational schema of the database:
 
 **Book** represents a specific biblical book within a manuscript (e.g., Genesis or Exodus, tracked by the attribute _book_type_). It has the attribute _sequence number_, which indicates the book’s order within the manuscript. Since the sequence order depends on the manuscript, this entity is subordinate to Manuscript. Note that the relationship between Book and Manuscript is many-to-one: a specific book, as transcribed (including its unique errors and variations), belongs to one manuscript only, while a manuscript can contain multiple books.
 
-**Book Element** represents a generic component of a book, which can be one of three types (attribute _element_type_): prologue, summary, and text. The structure is as follows:
+**Book Element** represents a "generic" component of a book, which can be one of three types (attribute _element_type_): prologue, summary, and text. The structure is as follows:
 * A book can contain up to five prologues, at most one summary, and exactly one text
 * Books can exist without prologues and/or summaries
-Each Book Element has a unique _ID_, which serves as the primary key within the database. The idea is that the ID ties the book element to a particular text (e.g., a specific prologue known in the domain). Thus, for example, two distinct prologues for the book of Genesis will have different _IDs_ to distinguish them from each othe. Conversely, a prologue with a given _ID_ can appear in more than one book, represents the same shared textual content.
+Each Book Element has a unique _ID_, which serves as the primary key within the database. The idea is that the ID ties the book element to a particular text (e.g., a specific prologue known in the domain). Thus, for example, two distinct prologues for the book of Genesis will have different _IDs_ to distinguish them from each other. Conversely, a prologue with a given _ID_ can appear in more than one book, represents the same shared textual content. Note how Book Element is a generic, abstract concept used to differentiate between element types and their defining textual content. 
 
+**Includes** tracks the many-to-many relationship between a specific manuscript’s book and its elements. While the Book Element entity represents generic elements of a book, characterized by their type and uniquely identified by their text (via the ID attribute), linking a Book Element to a Book “materializes” it. This connection describes the attributes of the specific physical instance of the Book Element as it appears within the particular manuscript’s book. Such physical characteristics, such as the paratext, are described by the attributes: 
+* _Element sequence order_: Indicates the order of the element within the book. The text is always the last element, while prologues and summaries are interchangeable.
+* _Initial sheet_ and _final sheet_: Specify the starting and ending sheet of the element in the manuscript, defined by: _page number_ and _column_ (e.g., “ra” for recto-column a, “vb” for verso-column b). Values such as “om.” (omitted) or “lac.” (lacuna) are used for missing or damaged portions.
+* _Initial heading_ and _final heading_: Represent the starting and ending headings of the element. These mix uppercase and lowercase letters to expand abbreviations, aiding text search. These attributes can also have “om.” or “lac.” values and are optional.
+* _Running title_: An optional attribute for the abbreviated book title in the page margin.
+* _Decorated initial letter_: An optional attribute indicating the presence of a decorated initial letter, which can also have “om.” or “lac.” values.
+* _Stichometry_: An optional attribute recording the number of lines declared at the end of some texts.
+* _Junction_: Indicates whether the element ends at a gathering’s junction. Values include:
+** “True” (at the junction),
+** “True with blank spaces” (ends with gaps),
+** “Unconfirmed” (uncertainty due to lack of evidence),
+** “False” (not at the junction).
+* _Notes_: An optional textual field for additional information about the element.
 
 ## Usage of the online implementation of the system
 
