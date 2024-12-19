@@ -45,11 +45,7 @@ Each Book Element has a unique _ID_, which serves as the primary key within the 
 * _Running title_: An optional attribute for the abbreviated book title in the page margin.
 * _Decorated initial letter_: An optional attribute indicating the presence of a decorated initial letter, which can also have “om.” or “lac.” values.
 * _Stichometry_: An optional attribute recording the number of lines declared at the end of some texts.
-* _Junction_: Indicates whether the element ends at a gathering’s junction. Values include:
-** “True” (at the junction),
-** “True with blank spaces” (ends with gaps),
-** “Unconfirmed” (uncertainty due to lack of evidence),
-** “False” (not at the junction).
+* _Junction_: Indicates whether the element ends at a gathering’s junction. Values include: “(x)” caesura with blank spaces, “?” possible caesura, “(?)” possible caesura with blank spaces, “/” confirmed caesura that includes the following incipit, “/?” possible caesura that includes the following incipit, “(/)” caesura that includes the following incipit and blank spaces, “(/?)” possible caesura that includes the following incipit and blank spaces, and “B” anomalous blank spaces at the end of a text. 
 * _Notes_: An optional textual field for additional information about the element.
 
 ## Usage of the online implementation of the system
