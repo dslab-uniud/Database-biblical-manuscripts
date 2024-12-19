@@ -7,9 +7,9 @@ The database aims to pose itself as an integrated and generalizable framework to
 
 The current repository includes:
 * an Excel file with the raw data about the biblical manuscripts: **TO-DO**
-* the code to set up the database within a Postgres database instance: **TO-DO**
+* [the code to set up the database within a Postgres database instance](https://github.com/dslab-uniud/Database-biblical-manuscripts#:~:text=28%20Commits-,Database,-Create%20README.md)
 * the code to import the raw Excel file into the database: **TO-DO**
-* the code of some queries that show how to use the database: **TO-DO**
+* [the code of some queries that show how to use the database](https://github.com/dslab-uniud/Database-biblical-manuscripts#:~:text=28%20Commits-,Database,-Create%20README.md)
 
 The following picture reports the overall relational schema of the database:
 
