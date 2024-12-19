@@ -1,8 +1,6 @@
 Here we collect the SQL DDL code to deploy [the database tables](https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/Database/DDL_db_schema.sql) and [the related triggers](https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/Database/DDL_triggers.sql).
 
-In addition some exemplary SQL queries that can be run against the database are as follows.
-
-<br />
+In addition, some exemplary SQL queries that can be run against the database are as follows.
 
 **Determine all summaries of Genesis.** This type of query allows the identification of the various types of introductory paratexts (prologues and chapter headings) associated with the same biblical book, allowing for an examination of the diversity of editorial arrangements across different manuscripts.
 ```
