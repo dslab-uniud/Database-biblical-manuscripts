@@ -1,4 +1,4 @@
-Here **(TO DO)** we collect the SQL DDL code to deploy the database.
+Here we collect the SQL DDL code to deploy [the database tables](https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/Database/DDL_db_schema.sql) and [the related triggers](https://github.com/dslab-uniud/Database-biblical-manuscripts/blob/main/Database/DDL_triggers.sql).
 
 In addition some exemplary SQL queries that can be run against the database are as follows.
 
