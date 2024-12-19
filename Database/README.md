@@ -1,6 +1,6 @@
 Here we collect the SQL DDL code to deploy the database.
 
-Some exemplary SQL queries that can be run against the database are as follows.
+In addition some exemplary SQL queries that can be run against the database are as follows.
 
 <br />
 
