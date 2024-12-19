@@ -1,4 +1,4 @@
-Here we collect the SQL DDL code to deploy the database.
+Here **(TO DO)** we collect the SQL DDL code to deploy the database.
 
 In addition some exemplary SQL queries that can be run against the database are as follows.
 
